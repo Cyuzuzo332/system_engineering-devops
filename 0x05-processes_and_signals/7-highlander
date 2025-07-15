@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# A Bash script that loops with a sleep, prints message on SIGTERM.
+
+trap "echo 'I am invincible!!!'" SIGTERM
+
+while true
+do
+  echo "To infinity and beyond"
+  sleep 2
+done
